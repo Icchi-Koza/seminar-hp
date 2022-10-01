@@ -32,7 +32,35 @@ body{
 /* ---------------------------------------------------------------------------------------------------------- */
 /*    About us */
 
+.us ul{
+          font-size: 25px;
+          margin-left: 15%;
+}
+.us li{
+          line-height: 1.5;
+          list-style-type: none;
+          position: relative;
+}
 
+.us li::before{
+          position: absolute;
+          top: 50%;
+          left: 0px;
+          transform: translateY(-50%);
+          width: 0px;
+          height: 0px;
+          border: 0.3em solid transparent;
+          border-left: 0.4em solid #3388dd;
+          content: "";
+}
+
+.us > ul span{
+          color: #2a4de8;
+          font-weight: bold;
+          font-size: 25px;
+          margin-right: 10%;
+          margin-left: 2.5%;
+}
 
 
 
@@ -48,8 +76,21 @@ body{
           margin-bottom: 10px;
           border: 2.5px dashed #606163;
           border-radius: 35px;
-          width: 160px;
+          width: 220px;
           text-align: center;
+          font-weight: bold;
+          box-shadow: 3px 7px 4px;
+          transition: 0.5s;
+}
+
+.basic_text span, .basic_additional span{
+          margin-left: 30px;
+          font-size: 28px;
+}
+
+.basic_text:hover{
+          box-shadow: none;
+          background: #e1e6e2;
 }
 
 .basic_wrapper{
@@ -63,6 +104,7 @@ body{
 .basic_list{
           list-style: none;
           margin-left: 30px;
+          color: #2a4de8;
 }
 
 .basic_additional{
@@ -72,9 +114,23 @@ body{
           margin-top: 30px;
           border: 2.5px dashed #606163;
           border-radius: 35px;
-          width: 235px;
+          width: 295px;
           text-align: center;
+          box-shadow: 3px 7px 4px;
+          transition: 0.5s;
 }
+
+.basic_additional:hover{
+          box-shadow: none;
+          background: #e1e6e2;
+}
+
+.basic_text>a, .basic_additional>a{
+          text-decoration: none;
+          color: #000000;
+          display: block;
+}
+
 
 
 /* ----------------------------------Group Study----------------------------------------- */
